@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-wrapper {
+  background-color: hsl(217, 19%, 24%);
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  padding: 5rem 0;
+}
+.box {
+  max-width: 60rem;
+  padding: 0rem 4.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.advice-title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(150, 100%, 66%);
+}
+.advice-id {
+  font-size: 1.4rem;
+}
+
+.advice {
+  font-size: 3.2rem;
+  color: hsl(193, 38%, 86%);
+}
+.divider {
+  margin-bottom: 20px;
+}
+.divider img {
+  width: 100%;
+}
+.btn--advice {
+  cursor: pointer;
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  padding: 1.8rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn--advice:hover {
+  filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
+  transition: all 0.2s ease-out;
+}
+.icon--advice {
+  display: flex;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url(./images/icon-dice.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 34.375em) {
+  html {
+    font-size: 56.25%;
+  }
+  .box {
+    width: 50rem;
+    padding: 0rem 4.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 30em) {
+  html {
+    font-size: 50%;
+  }
+  .box {
+    width: 40rem;
+  }
+}
